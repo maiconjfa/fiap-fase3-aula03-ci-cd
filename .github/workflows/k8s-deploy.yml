@@ -2,9 +2,9 @@ name: ☸️ Deploy to Kubernetes
 
 on:
   workflow_run:
-    workflows: ["🐳 Docker Build and Push"]
-    types: [completed]
-    branches: [main]
+    # workflows: ["🐳 Docker Build and Push"]
+    # types: [completed]
+    # branches: [main]
   workflow_dispatch:
 
 env:

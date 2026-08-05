@@ -2,25 +2,25 @@ name: 🐤 Canary Deploy with Istio
 
 on:
   workflow_dispatch:
-    inputs:
-      canary-percentage:
-        description: 'Canary percentage (0-100)'
-        required: true
-        default: '10'
-        type: choice
-        options:
-          - '10'
-          - '25'
-          - '50'
-          - '100'
-      action:
-        description: 'Action'
-        required: true
-        default: 'deploy'
-        type: choice
-        options:
-          - 'deploy'
-          - 'rollback'
+    # inputs:
+    #   canary-percentage:
+    #     description: 'Canary percentage (0-100)'
+    #     required: true
+    #     default: '10'
+    #     type: choice
+    #     options:
+    #       - '10'
+    #       - '25'
+    #       - '50'
+    #       - '100'
+    #   action:
+    #     description: 'Action'
+    #     required: true
+    #     default: 'deploy'
+    #     type: choice
+    #     options:
+    #       - 'deploy'
+    #       - 'rollback'
 
 jobs:
   canary-deploy:
